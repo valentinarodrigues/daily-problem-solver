@@ -31,4 +31,19 @@ od['c'] = 3
 print(od)
 ```
 
+```python
+# Python program to demonstrate
+# sorted()
+  
+  
+L = ['aaaa', 'bbb', 'cc', 'd']
+  
+# sorted without key parameter
+print(sorted(L))
+print()
+  
+# sorted with key parameter
+print(sorted(L, key = len))
+```
 
+sort() is a method of list class and can only be used with lists.
