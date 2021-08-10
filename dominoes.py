@@ -14,7 +14,9 @@ class Solution(object):
                     ans[k] = x
             elif x > y: #RL
                 for k in range(i+1, j):
+                    # cmp = lambda a,b: (a>b)-(a<b)
                     print('.LR'[cmp(k-i, j-k)])
+
                     ans[k] = '.LR'[cmp(k-i, j-k)]
 
         return "".join(ans)
