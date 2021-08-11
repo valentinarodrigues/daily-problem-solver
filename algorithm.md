@@ -74,13 +74,23 @@ A Binary Tree is a Complete Binary Tree if all the levels are completely filled 
      /  \   /
     8   7  9 
 
-Insertion: O(log(n)) (Height of the tree) (Elements are inserted at the leave)
-Deletion: O(log(n))  (Elements are deleted at the root) (For deleting 1 element)
+Insertion: O(log(n)) (Height of the tree) (Elements are inserted at the leave) (Bottom up approach - moving upwards)
+Deletion: O(log(n))  (Elements are deleted at the root) (For deleting 1 element) Last element takes the place of the root that was deleted - Top down approach from root start comparing moving to the roots    
+
+
 Creation of a heap: since we insert each element  - nlog(n)
 Complete deletion: nlog(n) (Deleting all elements in a heap sort)
+
 Heap sort: Perform deletion and every element deleted will be stored at the free space at the end of the array
 Sort: Creation nlog(n) + Deletion nlog(n)
 2nlog(n) ~ nlog(n)
 
-Heapify=> 
+Heapify=>  first build a complete binary tree
+direction is top down 
+starting from non leaf nodes to the leaves O(n)
+
+
+Last non-leaf node => n/2 - 1
+
+
 

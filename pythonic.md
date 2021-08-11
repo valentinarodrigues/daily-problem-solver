@@ -47,3 +47,6 @@ print(sorted(L, key = len))
 ```
 
 sort() is a method of list class and can only be used with lists.
+Time complexity is nlog(n)
+Timsort algorithm
+
