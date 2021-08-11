@@ -50,3 +50,4 @@ sort() is a method of list class and can only be used with lists.
 Time complexity is nlog(n)
 Timsort algorithm
 
+For Max heap => multiply each value by -1 so that we can use it as MaxHeap.
