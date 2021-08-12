@@ -9,11 +9,9 @@ class Solution:
                 if(matrix[i][j] == 1):
                     if(i>0 and j>0):
                         matrix[i][j] += min(matrix[i-1][j-1], matrix[i][j-1], matrix[i-1][j])
-                    count+=matrix[i][j]
-                        
+                    count+=matrix[i][j]          
         return count
-                    
-                    
+
 s = Solution()
 print(s.countSquares([
   [0,1,1,1],
