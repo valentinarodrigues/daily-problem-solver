@@ -87,3 +87,13 @@ print("The 3 smallest numbers in list are : ",end="")
 print(heapq.nsmallest(3, li1))
 ```
 
+[::-1] => reverse a string
+k=3
+length = 10
+cardPoints[0:k] => 0 to 3(excluding) => 0 , 1 , 2
+cardPoints[-1:-k-1:-1] => 10, 9, 8 => -1, -2 , -3 (-1 to -4(excluding))
+
+# Initializing an array
+```python
+x = [0] * n  # n is length of the array
+```
