@@ -19,11 +19,12 @@ class Solution:
                 # eliminate the 0's which are either in the first row, first column, last row, last column
                 if(i==0 or j==0 or i==rows-1 or j==col-1):
                     dfs(i, j, 1) 
+                          
         for i in range(rows):
             for j in range(col):
                 if(grid[i][j] == 0):
                     dfs(i, j, 1) # traverse through all the nodes that are currently 0 and mark them as 1 (visited) hence there is a check for grid[i][j] == 0
-                    result+=1
+                    result+=1 # THE REMAINING ILSANDS MUST BE CLOSED - COUNT THEM
         return result
 
 
