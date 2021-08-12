@@ -50,3 +50,15 @@ sort() is a method of list class and can only be used with lists.
 Time complexity is nlog(n)
 Timsort algorithm
 
+For Max heap => multiply each value by -1 so that we can use it as MaxHeap.
+
+
+```python
+# Reverse iteration
+# range(start, stop, step)
+# start index is included (from)
+# stop index is not included (till)
+# step is the difference => for reverse make it -1
+for i in range(len(s)-1, -1, -1):
+    print(i)
+```

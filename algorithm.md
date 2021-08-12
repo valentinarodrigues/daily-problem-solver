@@ -6,9 +6,9 @@ kth largest/smallest number in a list
 
 
 ## Array representation of binary tree
-Left child: 2 * parent's idx 
-Right child: 2 * parent's idx + 1
-Parent : child's idx/2
+Left child: 2 * parent's idx + 1
+Right child: 2 * parent's idx + 2 
+Parent : child's idx -1 /2
 
         A
       /   \
@@ -19,14 +19,14 @@ Parent : child's idx/2
 _____________
 A B C D E F G
 _____________
-1 2 3 4 5 6 7
+0 1 2 3 4 5 6
 
 
 
 ## Full Binary Tree
 h - height
                     h+1
-Number of nodes - 2    -1 
+Number of nodes => 2    -1 
 
 Examples:
                18               
@@ -92,5 +92,14 @@ starting from non leaf nodes to the leaves O(n)
 
 Last non-leaf node => n/2 - 1
 
+              1
+            /   \  
+           2      3  
+         /   \    
+        4     5  
 
-
+## Depth First Traversals: 
+(a) Inorder (Left, Root, Right) : 4 2 5 1 3 
+(b) Preorder (Root, Left, Right) : 1 2 4 5 3 
+(c) Postorder (Left, Right, Root) : 4 5 2 3 1
+## Breadth First or Level Order Traversal : 1 2 3 4 5 
