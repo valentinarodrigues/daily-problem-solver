@@ -19,3 +19,7 @@ This is what you may end up doing: :x:
     right = word[:idx] 
     idx+=1
 
+
+Take care of indentation make sure you are returning from the function at the right place
+TO REPEAT:
+1110. Delete Nodes And Return Forest
