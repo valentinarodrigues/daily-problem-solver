@@ -23,3 +23,13 @@ This is what you may end up doing: :x:
 Take care of indentation make sure you are returning from the function at the right place
 TO REPEAT:
 1110. Delete Nodes And Return Forest
+951. Flip Equivalent Binary Trees
+
+See for solution like destroying the array in question itself
+
+MATH 101
+Ceil of 2 numbers
+
+12
+-- = 7.2 => Ceil should be 8 => Ceil(p/k) => ((p-1)//k)+1
+7
