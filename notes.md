@@ -33,3 +33,6 @@ Ceil of 2 numbers
 12
 -- = 7.2 => Ceil should be 8 => Ceil(p/k) => ((p-1)//k)+1
 7
+
+
+-- To not afffect the original string just reverse the string and make changes in it
