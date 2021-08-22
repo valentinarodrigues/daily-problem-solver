@@ -33,3 +33,21 @@ Ceil of 2 numbers
 12
 -- = 7.2 => Ceil should be 8 => Ceil(p/k) => ((p-1)//k)+1
 7
+
+
+-- To not afffect the original string just reverse the string and make changes in it
+
+-- Overlapping
+
+(max(a0, b0), min(a1, b1))
+
+case 1: b ends before a ends:
+a: a0 |-------------| a1
+b:     b0 |-----| b1
+
+case 2: b ends after a ends:
+a: a0 |--------| a1
+b:     b0 |--------| b1
+
+max of the starting index < min of the ending indexes
+
