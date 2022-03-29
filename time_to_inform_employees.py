@@ -4,6 +4,8 @@ class Solution:
         children = defaultdict(list)
         for i, m in enumerate(manager):
             if m >= 0: children[m].append(i)
+        for i in children:
+            print(i, children[i])
 
         def dfs(i):
             # find the max since one employee can manage a heirachy whereas other manager can just manage one employee under him
@@ -30,4 +32,10 @@ n = 15
 headID = 0
 manager = [-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6]
 informTime = [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0]
+# print(s.numOfMinutes(n, headID, manager, informTime))
+
+n = 4
+headID = 2
+manager = [3,3,-1,2]
+informTime = [0,0,162,914]
 print(s.numOfMinutes(n, headID, manager, informTime))

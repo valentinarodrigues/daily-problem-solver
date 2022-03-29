@@ -9,7 +9,7 @@ class Solution:
                 # Removal of Character from a String using Slicing and Concatenation
                 prev = word[:w] + word[w+1:] # prev formed by eliminating one character at a time in the current word
                 if prev in mem:
-                    mem[word] = mem[prev] + 1
+                    mem[word] = mem[prev] + 1 # immportant
                     result = max(mem[word], result)
         return result
 input = ["xbc","pcxbcf","xb","cxbc","pcxbc"]

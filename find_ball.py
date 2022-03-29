@@ -1,8 +1,7 @@
-
 class Solution:
-    def get_balls(self, arr):
+    def findBall(self, arr):
         def dfs(i, j, r, c):
-            if(i == r):
+            if (i == r):
                 return j
             curr = arr[i][j]
             if(curr == 1 and (j+1 == c or arr[i][j+1] == -1)):
@@ -14,11 +13,10 @@ class Solution:
             else:
                 return dfs(i+1, j-1, r, c)
 
-        row , col = len(arr), len(arr[0])    
+        row, col = len(arr), len(arr[0])    
         ans = [-1] * col
         for idx in range(col):
-            x = dfs(0, idx, row, col)
-            ans[idx] = x
+            ans[idx] = dfs(0, idx, row, col)
         return ans
 
 s = Solution()

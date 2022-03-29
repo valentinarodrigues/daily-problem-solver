@@ -9,7 +9,7 @@ class Solution(object):
 
         lo, hi = 1, max(piles)
         while lo < hi:
-            mi = (lo + hi) // 2
+            mid = (lo + hi) // 2
             # if not possible(mi): # since this solution is not possible we take the next possible integer hence +1 
             #     lo = mi + 1
             # else: # since we want the minimum number k when k satisifies the condition we set it as the hi value since we want to cap the solution  
